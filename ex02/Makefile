@@ -1,10 +1,9 @@
-NAME	= ex00
+NAME	= ex02
 
 CC		= c++ -Wall -Werror -Wextra 
 
-CFLAGS	= -Wall -Werror -Wextra 
 
-SRC	= main.cpp Animal.cpp Dog.cpp Cat.cpp Wrong
+SRC	= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 
 
@@ -16,8 +15,11 @@ $(NAME):
 clean:		
 	rm -f $(OBJ)
 
-run:		$(NAME)
+run:	re
 			./$(NAME)
+
+runMem:		re
+			valgrind --log-file=val.log ./$(NAME)
 
 fclean:		clean
 			rm -f $(NAME)
