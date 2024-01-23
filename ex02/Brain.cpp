@@ -2,9 +2,13 @@
 
 Brain::Brain()
 {
-	std::cout << "Brain default constructor called" << std::endl;
-	for (int i = 0; i < 100; i++)
-		this->ideas[i] = "think: " + std::to_string(i);
+    std::cout << "Brain default constructor called" << std::endl;
+    for (int i = 0; i < 100; i++)
+    {
+        std::stringstream ss;
+        ss << i;
+        this->ideas[i] = "think: " + ss.str();
+    }
 }
 
 Brain::Brain(const Brain &copy)

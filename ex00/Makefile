@@ -1,10 +1,8 @@
 NAME	= ex00
 
-CC		= c++ -Wall -Werror -Wextra 
+CC		= c++ -Wall -Werror -Wextra -std=c++98
 
-CFLAGS	= -Wall -Werror -Wextra 
-
-SRC	= main.cpp Animal.cpp Dog.cpp Cat.cpp Wrong
+SRC	= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 
 
