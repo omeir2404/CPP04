@@ -18,7 +18,7 @@ run:	re
 			./$(NAME)
 
 runMem:		re
-			valgrind --log-file=val.log ./$(NAME)
+			valgrind --leak-check=full --show-leak-kinds=all --log-file=val.log ./$(NAME)
 
 fclean:		clean
 			rm -f $(NAME) val.log

@@ -14,11 +14,11 @@ int main()
 	delete i;
 
 
-	const Dog *d = new Dog();
-	(void)d;
-	delete d;
-	const Animal* Animals[10] = {new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat()};
-	for (int i = 0; i < 10; i++)
-	    delete Animals[i];
+	// const Dog *d = new Dog();
+	// (void)d;
+	// delete d;
+	// const Animal* Animals[10] = {new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat(), new Dog(), new Cat()};
+	// for (int i = 0; i < 10; i++)
+	//     delete Animals[i];
 	return 0;
 }
