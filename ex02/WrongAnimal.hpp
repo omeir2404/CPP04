@@ -2,7 +2,6 @@
 #define WRONGANIMAL_HPP
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <typeinfo>
 class WrongAnimal
 {

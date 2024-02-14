@@ -2,7 +2,7 @@ NAME	= ex02
 
 CC		= c++ -Wall -Werror -Wextra -std=c++98
 
-SRC	= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
+SRC	= main.cpp AAnimal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 
 

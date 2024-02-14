@@ -13,10 +13,11 @@ int main()
 	delete j;//should not create a leak
 	delete i;
 
-	// Dog basic;
-	// {
-	// 	Dog temp = basic;
-	// }
+	Dog basic;
+	{
+		Dog temp = basic;
+	}
+	
 	
 	return 0;
 }

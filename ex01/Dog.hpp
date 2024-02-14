@@ -8,7 +8,7 @@ class Dog : public Animal
 {
     private:
         Brain *brain;
-        std::string	type;
+
     public:
         Dog();
         Dog( Dog &copy);
@@ -16,6 +16,5 @@ class Dog : public Animal
         Dog &operator=(const Dog &copy);
         void makeSound() const;
         Brain *getBrain() const;
-        std::string getType( void ) const;
 };
 #endif

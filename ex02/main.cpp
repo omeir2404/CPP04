@@ -1,4 +1,4 @@
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 #include <iostream>
@@ -8,17 +8,14 @@
 
 int main()
 {
-
-	// Animal *j = new Animal();// should not be possible
-	// delete j;
-	const Dog *d = new Dog();
-	(void)d;
-	delete d;
-	const Dog* Dogs[5] = {new Dog(), new Dog(), new Dog(), new Dog(), new Dog()};
-	for (int i = 0; i < 5; i++)
-	    delete Dogs[i];
-	const Cat* Cats[5] = {new Cat(), new Cat(), new Cat(), new Cat(), new Cat()};
-	for (int i = 0; i < 5; i++)
-	    delete Cats[i];
+	// const Animal *i = new Animal();
+	const Animal *j = new Dog();
+	// Animal test;
+	delete j;
+	Dog basic;
+	{
+		Dog temp = basic;
+	}
+	
 	return 0;
 }

@@ -40,8 +40,3 @@ Brain *Cat::getBrain( void ) const
 {
 	return (this->brain);
 }
-
-std::string Cat::getType( void ) const
-{
-	return (this->type);
-}

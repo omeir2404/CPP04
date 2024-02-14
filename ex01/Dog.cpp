@@ -39,7 +39,3 @@ Brain *Dog::getBrain( void ) const
 	return (this->brain);
 }
 
-std::string Dog::getType( void ) const
-{
-	return (this->type);
-}

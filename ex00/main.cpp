@@ -9,8 +9,8 @@
 int main()
 {
     const Animal* meta = new Animal();
-    const Dog* Dog_obj = new Dog();
-    const Cat* Cat_obj = new Cat();
+    const Animal* Dog_obj = new Dog();
+    const Animal* Cat_obj = new Cat();
 
     std::cout << std::endl;
     std::cout << "meta->getType(): " << meta->getType() << std::endl;
@@ -29,7 +29,7 @@ int main()
     delete Cat_obj;
 
     const WrongAnimal* WrongAnimal_obj = new WrongAnimal();
-    const WrongCat* WrongCat_obj = new WrongCat();
+    const WrongAnimal* WrongCat_obj = new WrongCat();
 
     std::cout << std::endl;
     std::cout << "WrongAnimal_obj->getType(): " << WrongAnimal_obj->getType() << std::endl;
