@@ -19,8 +19,8 @@ Animal::~Animal()
 Animal &Animal::operator=(const Animal &copy)
 {
     std::cout << "Animal assignation operator called" << std::endl;
-    if (this != &copy)
-        this->type = copy.type;
+
+    this->type = copy.type;
     return (*this);
 }
 
